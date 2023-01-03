@@ -129,7 +129,7 @@ dialog img{
 
 .front {
     background-size: 80%;
-    background-image: url("/bwsIcon.png");
+    background-image: url("bwsIcon.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: #385e9b;
