@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Water Tip Matching Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="icon" href="bwsIcon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>BWS Water Conservation Tips</h2>
+        <button onclick="resetGame()"><h3>Reset</h3></button>
+      </header>
+      <div id="game"></div>
+      <!-- Water sparingly -->
+      <dialog class="modal modal-sparingly">
+        <img src="grass.jpg" alt="grass" />
+        <p>WATER LAWNS JUST 1-2 TIMES A WEEK</p>
+        <button class="close-button">
+          <p>close</p>
+        </button>
+      </dialog>
+      <!-- Water at certain hours -->
+      <dialog class="modal modal-certainHours">
+        <img src="grassNight.jpg" alt="grass at night" />
+        <p>DON'T WATER LAWNS BETWEEN 9 AM AND 5 PM</p>
+        <button class="close-button">
+          <p>close</p>
+        </button>
+      </dialog>
+      <!-- Check for plumbing leaks -->
+      <dialog class="modal modal-leaks">
+        <img src="faucet.jpg" alt="faucet" />
+        <p>Check for plumbing leaks</p>
+        <button class="close-button">
+          <p>close</p>
+        </button>
+      </dialog>
+      <!-- Install water efficient fixtures -->
+      <dialog class="modal modal-fixtures">
+        <img src="showerHead.jpg" alt="shower head" />
+        <p>Install water efficient fixtures</p>
+        <button class="close-button">
+          <p>close</p>
+        </button>
+      </dialog>
+      <!-- take shorter showers -->
+      <dialog class="modal modal-shortShowers">
+        <img src="shower.jpg" alt="shower" />
+        <p>Take shorter showers</p>
+        <button class="close-button">
+          <p>close</p>
+        </button>
+      </dialog>
+      <!-- put a nozzle on garden hoses -->
+      <dialog class="modal modal-nozzle">
+        <img src="hose.jpg" alt="hose" />
+        <p>put a nozzle on garden hoses</p>
+        <button class="close-button">
+          <p>close</p>
+        </button>
+      </dialog>
+      <!-- Don't let the faucet run and run -->
+      <dialog class="modal modal-faucetOff">
+        <img src="toothBrush.jpg" alt="tooth brush" />
+        <p>Don't let the faucet run and run</p>
+        <button class="close-button">
+          <p>close</p>
+        </button>
+      </dialog>
+      <!-- Never use the toilet as a waste basket-->
+      <dialog class="modal modal-toilet">
+        <img src="toilet.jpg" alt="toilet" />
+        <p>Never use the toilet as a waste basket</p>
+        <button class="close-button">
+          <p>close</p>
+        </button>
+      </dialog>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
