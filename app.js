@@ -23,35 +23,35 @@ let matches;
 
 const waterConservationTips = [
   {
-    image: "/grass.jpg",
+    image: "grass.jpg",
     name: 'Water Lawns sparingly'
   },
   {
-    image: "/grassNight.jpg",
+    image: "grassNight.jpg",
     name: 'Water certain hours'
   },
   {
-    image: "/faucet.jpg",
+    image: "faucet.jpg",
     name: 'Check for plumbing leaks'
   },
   {
-    image: "/showerHead.jpg",
+    image: "showerHead.jpg",
     name: 'Install water efficient fixtures'
   },
   {
-    image: "/shower.jpg",
+    image: "shower.jpg",
     name: 'Take short showers'
   },
   {
-    image: "/hose.jpg",
+    image: "hose.jpg",
     name: 'Put a nozzle on your garden hose'
   },
   {
-    image: "/toothBrush.jpg",
+    image: "toothBrush.jpg",
     name: 'Dont let the Faucet run'
   },
   {
-    image: "/toilet.jpg",
+    image: "toilet.jpg",
     name: 'Never use the toilet as a waste basket'
   },
 ]
