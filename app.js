@@ -1,18 +1,18 @@
-//use water sparingly
-const modalSparingly = document.querySelector('.modal-sparingly');
-//water at certain hours
+// 1. Watersheds
+const modalWatersheds = document.querySelector('.modal-watersheds');
+// 2. Water at certain hours
 const modalCertainHours = document.querySelector('.modal-certainHours');
-//Check for plumbing leaks
+// 3. Check for plumbing leaks
 const modalLeaks = document.querySelector('.modal-leaks');
-//Check for plumbing leaks
-const modalFixtures = document.querySelector('.modal-fixtures');
-//Check for plumbing leaks
+// 4. Dedicated bottle
+const modalDedicatedBottle = document.querySelector('.modal-dedicatedBottle');
+// 5. Shorter showers 
 const modalShortShowers = document.querySelector('.modal-shortShowers');
-//Check for plumbing leaks
+// 6. Put a nozzle on garden hoses 
 const modalNozzle = document.querySelector('.modal-nozzle');
-//Check for plumbing leaks
+// 7. Don't let the faucet run too long
 const modalFaucetOff = document.querySelector('.modal-faucetOff');
-//Check for plumbing leaks
+// 8. Never use the toilet to throw away trash
 const modalToilet = document.querySelector('.modal-toilet');
 
 const game = document.getElementById('game');
@@ -22,35 +22,35 @@ let isPaused = true;
 let matches;
 
 const waterConservationTips = [
-  {
-    image: "grass.jpg",
-    name: 'Water Lawns sparingly'
+  {// 1. 
+    image: "watershed.jpg",
+    name: 'watershed'
   },
-  {
+  {// 2. 
     image: "grassNight.jpg",
     name: 'Water certain hours'
   },
-  {
+  {// 3. 
     image: "faucet.jpg",
     name: 'Check for plumbing leaks'
   },
-  {
-    image: "showerHead.jpg",
-    name: 'Install water efficient fixtures'
+  {// 4. 
+    image: "bottle.jpg",
+    name: 'dedicated bottle'
   },
-  {
+  {// 5. 
     image: "shower.jpg",
     name: 'Take short showers'
   },
-  {
+  {// 6. 
     image: "hose.jpg",
     name: 'Put a nozzle on your garden hose'
   },
-  {
+  {// 7. 
     image: "toothBrush.jpg",
     name: 'Dont let the Faucet run'
   },
-  {
+  {// 8. 
     image: "toilet.jpg",
     name: 'Never use the toilet as a waste basket'
   },
@@ -108,8 +108,8 @@ const clickCard = (e) => {
           }, 500)    
       }else {
         switch(firstPick.dataset.tipname){
-          case 'Water Lawns sparingly':
-            modalSparingly.showModal();
+          case 'watershed':
+            modalWatersheds.showModal();
             break;
           case 'Water certain hours':
             modalCertainHours.showModal();
@@ -117,8 +117,8 @@ const clickCard = (e) => {
           case 'Check for plumbing leaks':
             modalLeaks.showModal();
             break;
-          case 'Install water efficient fixtures':
-            modalFixtures.showModal();
+          case 'dedicated bottle':
+            modalDedicatedBottle.showModal();
             break;
           case 'Take short showers':
             modalShortShowers.showModal();

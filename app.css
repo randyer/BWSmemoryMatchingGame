@@ -59,12 +59,23 @@ h3{
         margin: 0; 
     }
 }
+
+dialog{
+    border-radius: 10px;
+}
 dialog img{
+    display: block;
     max-width: 80vw;
+    border-radius: 30px;
+    padding: 20px;
+    margin: auto;
 }
 @media screen and (min-width: 40rem){
     dialog img{
-        max-width: 40vw;
+        max-height: 50vh;
+    }
+    dialog p {
+        max-width: 60vw;
     }
 }
 
