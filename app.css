@@ -67,7 +67,6 @@ dialog img{
     display: block;
     max-width: 80vw;
     border-radius: 30px;
-    padding: 20px;
     margin: auto;
 }
 @media screen and (min-width: 40rem){
