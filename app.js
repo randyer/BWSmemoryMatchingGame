@@ -1,3 +1,9 @@
+const modalInstructions = document.querySelector('.modal-instructions')
+const openInstructions = document.querySelector('.open-instructions');
+
+openInstructions.addEventListener('click', function() {
+  modalInstructions.showModal();
+})
 // 1. Watersheds
 const modalWatersheds = document.querySelector('.modal-watersheds');
 // 2. Water at certain hours
@@ -14,12 +20,15 @@ const modalNozzle = document.querySelector('.modal-nozzle');
 const modalFaucetOff = document.querySelector('.modal-faucetOff');
 // 8. Never use the toilet to throw away trash
 const modalToilet = document.querySelector('.modal-toilet');
+// winning screen
+const modalWin = document.querySelector('.modal-win');
 
 const game = document.getElementById('game');
 
 let firstPick;
 let isPaused = true;
 let matches;
+
 
 const waterConservationTips = [
   {// 1. 
@@ -57,6 +66,8 @@ const waterConservationTips = [
 ]
 
 const resetGame = async() => {
+  document.getElementById('win').style.display='none';
+  document.getElementById('game').style.display='grid';
   game.innerHTML = '';
   isPaused = true;
   firstPick = null;
@@ -135,7 +146,10 @@ const clickCard = (e) => {
         }
         matches++;
         if(matches === 8) {
-        console.log("WINNER");
+        // console.log("WINNER");
+        // modalWin.showModal();
+        document.getElementById('game').style.display='none';
+        document.getElementById('win').style.display='block';
       }
       firstPick = null;
       isPaused = false;
@@ -190,4 +204,8 @@ closeModal[6].addEventListener('click', function() {
 
 closeModal[7].addEventListener('click', function() {
   modal[7].close();
+})
+
+closeModal[8].addEventListener('click', function() {
+  modal[8].close();
 })

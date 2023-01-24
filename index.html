@@ -20,9 +20,29 @@
     <div class="container">
       <header>
         <h2>BWS Water Conservation Tips</h2>
-        <button onclick="resetGame()"><h3>Reset</h3></button>
+        <button class="open-instructions"><h4>Instructions</h4></button>
+        <button onclick="resetGame()"><h4>Reset</h4></button>
       </header>
       <div id="game"></div>
+      <div id="win">
+        <h2>Great job!</h2>
+        <h3>
+          Make sure to share these tips with your family and friends for a
+          smarter community and a better environment.
+        </h3>
+      </div>
+      <!-- instructions -->
+      <dialog class="modal modal-instructions">
+        <h2>Instructions:</h2>
+        <h3>
+          The goal of this game is to correctly match cards with the same
+          pictures. Tap on a card to flip it over. Every time you match two
+          cards, you'll learn a new water converation tip. Good luck!
+        </h3>
+        <button class="close-button">
+          <h4>close</h4>
+        </button>
+      </dialog>
       <!-- 1. Water sheds -->
       <dialog class="modal modal-watersheds">
         <img src="watershed.jpg" alt="watershed" />
@@ -30,10 +50,10 @@
         <p>
           Watersheds are areas of land that channel water into rivers and
           creeks. Keeping these areas clean will help maintain healthy
-          wateresheds.
+          watersheds.
         </p>
         <button class="close-button">
-          <p>close</p>
+          <h4>close</h4>
         </button>
       </dialog>
       <!-- 2. Water at certain hours -->
@@ -47,7 +67,7 @@
           every three days is enough to keep your lawn healthy.
         </p>
         <button class="close-button">
-          <p>close</p>
+          <h4>close</h4>
         </button>
       </dialog>
       <!-- 3. Check for plumbing leaks -->
@@ -60,7 +80,7 @@
           find a leak to get it fixed.
         </p>
         <button class="close-button">
-          <p>close</p>
+          <h4>close</h4>
         </button>
       </dialog>
       <!-- 4. dedicated bottle -->
@@ -72,7 +92,7 @@
           This cuts back on the number of dishes that need to get washed.
         </p>
         <button class="close-button">
-          <p>close</p>
+          <h4>close</h4>
         </button>
       </dialog>
       <!-- 5. take shorter showers -->
@@ -84,7 +104,7 @@
           so try to keep your shower times as short as possible!
         </p>
         <button class="close-button">
-          <p>close</p>
+          <h4>close</h4>
         </button>
       </dialog>
       <!-- 6. put a nozzle on garden hoses -->
@@ -98,7 +118,7 @@
           washing the car.
         </p>
         <button class="close-button">
-          <p>close</p>
+          <h4>close</h4>
         </button>
       </dialog>
       <!-- 7. Don't let the faucet run too long -->
@@ -111,7 +131,7 @@
           rinse dishes with clean water quickly.
         </p>
         <button class="close-button">
-          <p>close</p>
+          <h4>close</h4>
         </button>
       </dialog>
       <!-- 8. Never use the toilet to throw away trash -->
