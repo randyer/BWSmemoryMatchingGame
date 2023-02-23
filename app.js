@@ -4,6 +4,8 @@ const openInstructions = document.querySelector('.open-instructions');
 openInstructions.addEventListener('click', function() {
   modalInstructions.showModal();
 })
+
+//List of pop-up screens for tips AKA modals 
 // 1. Watersheds
 const modalWatersheds = document.querySelector('.modal-watersheds');
 // 2. Water at certain hours
@@ -20,8 +22,6 @@ const modalNozzle = document.querySelector('.modal-nozzle');
 const modalFaucetOff = document.querySelector('.modal-faucetOff');
 // 8. Never use the toilet to throw away trash
 const modalToilet = document.querySelector('.modal-toilet');
-// winning screen
-const modalWin = document.querySelector('.modal-win');
 
 const game = document.getElementById('game');
 
@@ -29,7 +29,7 @@ let firstPick;
 let isPaused = true;
 let matches;
 
-
+//list of images for the conservation tips
 const waterConservationTips = [
   {// 1. 
     image: "watershed.jpg",
@@ -146,8 +146,6 @@ const clickCard = (e) => {
         }
         matches++;
         if(matches === 8) {
-        // console.log("WINNER");
-        // modalWin.showModal();
         document.getElementById('game').style.display='none';
         document.getElementById('win').style.display='block';
       }
@@ -171,7 +169,8 @@ const rotateElements = (elements) => {
 
 resetGame();
 
-// all classes
+// This section is the functionality for the close buttons.
+//This is a list of the buttons matched up with the modals
 const modal = document.querySelectorAll('.modal');
 const closeModal = document.querySelectorAll('.close-button');
 closeModal[0].addEventListener('click', function() {

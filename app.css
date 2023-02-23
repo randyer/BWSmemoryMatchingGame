@@ -130,6 +130,12 @@ dialog img{
     border-radius: 10px;
     margin: auto;
 }
+dialog video{
+    display: block;
+    max-width: 40vw;
+    border-radius: 10px;
+    margin: auto;
+}
 dialog h3{
     padding-top: 20px;
 }
