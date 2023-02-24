@@ -11,18 +11,16 @@ Steps to replace a tip:
 1. Update the Modal for the tip in both the HTML and Javascript file.
 
 - first update the code which is located at the top of the Javascript file
+
   ```
   // 1. New tip
   const modalNewTip = document.querySelector('.modal-newName');
   ```
 
-```
 - Next, find the modal in the html code.
   update the class name to the newName made in .querySelector('.newName'), the img source to the new image,
   as well as the content wanted in header 3 and the paragraph. Or if you wanted a video instead of a picture
   in the pop-up this is where it would get updated
-
-```
 
 <dialog class="modal modal-newName">
         <img src="yourNewImage.jpg" alt="Name of image" />
@@ -55,8 +53,8 @@ Steps to replace a tip:
   The following code is found in the click card function
 
 ```
-          switch(firstPick.dataset.tipname){
-            case 'NewTip':
-              modalnewTip.showModal();
-              break;
+  switch(firstPick.dataset.tipname){
+    case 'NewTip':
+      modalnewTip.showModal();
+      break;
 ```
