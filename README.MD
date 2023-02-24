@@ -49,7 +49,6 @@ name: 'NewTip'
 3. find the clickCard function and update the switch case
 
 - change the case name to the name made in step 2, and then update the modal name.
-  The following code is found in the click card function
 
 ```
   switch(firstPick.dataset.tipname){
