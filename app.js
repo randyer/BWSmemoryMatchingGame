@@ -30,6 +30,8 @@ let isPaused = true;
 let matches;
 
 //list of images for the conservation tips
+// name is essentially the ID to reference the image in the click card dunction below
+// feel free to change tips or images as wanted
 const waterConservationTips = [
   {// 1. 
     image: "watershed.jpg",
@@ -118,6 +120,7 @@ const clickCard = (e) => {
         isPaused = false;
           }, 500)    
       }else {
+        //list of the water conservation tips identified by their id (name)
         switch(firstPick.dataset.tipname){
           case 'watershed':
             modalWatersheds.showModal();
@@ -145,6 +148,7 @@ const clickCard = (e) => {
             break;
         }
         matches++;
+        //When the game is won, the board is removed and the winning screen is displayed
         if(matches === 8) {
         document.getElementById('game').style.display='none';
         document.getElementById('win').style.display='block';
