@@ -1,11 +1,11 @@
+//List of pop-up screens AKA modals 
+
+//instructions pop-up screen
 const modalInstructions = document.querySelector('.modal-instructions')
 const openInstructions = document.querySelector('.open-instructions');
-
 openInstructions.addEventListener('click', function() {
   modalInstructions.showModal();
 })
-
-//List of pop-up screens for tips AKA modals 
 // 1. Watersheds
 const modalWatersheds = document.querySelector('.modal-watersheds');
 // 2. Water at certain hours
@@ -22,16 +22,15 @@ const modalNozzle = document.querySelector('.modal-nozzle');
 const modalFaucetOff = document.querySelector('.modal-faucetOff');
 // 8. Never use the toilet to throw away trash
 const modalToilet = document.querySelector('.modal-toilet');
-
+///////////////////////////////////////////////////////////////////////////////
 const game = document.getElementById('game');
-
 let firstPick;
 let isPaused = true;
 let matches;
 
-//list of images for the conservation tips
-// name is essentially the ID to reference the image in the click card dunction below
-// feel free to change tips or images as wanted
+// list of images for the conservation tips
+// name is essentially the ID to reference the image in the click card function below
+// feel free to change tips or images as wanted on the cards
 const waterConservationTips = [
   {// 1. 
     image: "watershed.jpg",
