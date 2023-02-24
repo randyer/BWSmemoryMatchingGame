@@ -22,6 +22,7 @@ Steps to replace a tip:
   as well as the content wanted in header 3 and the paragraph. Or if you wanted a video instead of a picture
   in the pop-up this is where it would get updated
 
+```
 <dialog class="modal modal-newName">
         <img src="yourNewImage.jpg" alt="Name of image" />
         <h3>New Header here</h3>
