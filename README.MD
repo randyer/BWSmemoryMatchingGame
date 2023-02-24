@@ -1,4 +1,4 @@
-Guide to editing Memory matching game tips
+<h1>Guide to editing Memory matching game tips</h2>
 
 There are a two noteworthy components that make up this game
 
