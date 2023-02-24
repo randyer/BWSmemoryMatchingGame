@@ -18,7 +18,7 @@ Steps to replace a tip:
   ```
 
 - Next, find the modal in the html code.
-  update the class name to the newName made in .querySelector('.newName'), the img source to the new image,
+  Update the class name to the newName made in .querySelector('.newName'), the img source to the new image,
   as well as the content wanted in header 3 and the paragraph. Or if you wanted a video instead of a picture
   in the pop-up this is where it would get updated
 
@@ -35,18 +35,16 @@ Steps to replace a tip:
       </dialog>
 ```
 
-2. Update the list of tips in the Javascript file.
+2. Update the tips found in the list of tips in the Javascript.
 
-- find the list of tips in the javascript code and update the tip
-
-  ```
-  const waterConservationTips = [
-  {// 1.
-  image: "NewImageName.jpg",
-  name: 'NewTip'
-  }
-  ]
-  ```
+```
+const waterConservationTips = [
+{// 1.
+image: "NewImageName.jpg",
+name: 'NewTip'
+}
+]
+```
 
 3. find the clickCard function and update the switch case
 
