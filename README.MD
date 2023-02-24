@@ -35,7 +35,7 @@ Steps to replace a tip:
       </dialog>
 ```
 
-2. Update the tips found in the list of tips in the Javascript.
+2. Update the tip found in the list of tips in the Javascript.
 
 ```
 const waterConservationTips = [
