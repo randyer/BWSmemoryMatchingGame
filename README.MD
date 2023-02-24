@@ -16,11 +16,12 @@ Steps to replace a tip:
   const modalNewTip = document.querySelector('.modal-newName');
 
 - Next, find the modal in the html code.
-update the class name to the newName made in .querySelector('.newName'), the img source to the new image,
-as well as the content wanted in header 3 and the paragraph. Or if you wanted a video instead of a picture
-in the pop-up this is where it would get updated
-EXAMPLE:
-'''
+  update the class name to the newName made in .querySelector('.newName'), the img source to the new image,
+  as well as the content wanted in header 3 and the paragraph. Or if you wanted a video instead of a picture
+  in the pop-up this is where it would get updated
+  EXAMPLE:
+
+```
 <dialog class="modal modal-newName">
         <img src="yourNewImage.jpg" alt="Name of image" />
         <h3>New Header here</h3>
@@ -31,7 +32,7 @@ EXAMPLE:
           <h4>close</h4>
         </button>
       </dialog>
- '''
+```
 
 2. Update the list of tips in the Javascript file.
 
